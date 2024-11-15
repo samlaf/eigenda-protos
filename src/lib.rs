@@ -1,7 +1,3 @@
-pub mod disperser {
-    tonic::include_proto!("disperser");
-}
-
-pub mod common {
-    tonic::include_proto!("common");
-}
+pub mod generated;
+pub use generated::common;
+pub use generated::disperser;
